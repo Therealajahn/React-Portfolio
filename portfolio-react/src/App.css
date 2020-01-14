@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #7f7f7f;
+}
+
+#main-wrapper{
+ display: grid;
+ width: 100vw;
+ height: 100vh;
+ grid-template-rows: repeat(3, 1fr);
+ grid-template-areas: 
+  "top"
+  "name"
+  "projects"; 
+}
+
+header{
+  display: grid;
+  grid-area: name;
+  justify-items: center;
+}
+
+#first {
+  color: #fff;
+  width: 276px;
+  height: 77px;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+
+#second{
+  color: #fff;
+  width: 360px;
+  height: 72px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+#top{
+  display: grid;
+  grid-area: top;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "bio tech"; 
+}
+
+#bio{
+  display: grid;
+  grid-area: bio;
+  justify-items: center;
+}
+
+#bio-planet{
+  display: grid;
+  background-color: #000;
+  height: 20vw;
+  width: 20vw;
+  margin-left: 3vh;
+  margin-top: 10vh;
+  border-radius: 100%;
+  justify-items: center;
+  align-content: center;
+  color: #fff;
+  font-weight: 1000;
+  font-size: 30px;
+  line-height: 75px;
+  letter-spacing: 0.2em;
+}
+
+#tech{
+  display: grid;
+  grid-area: tech;
+  justify-items: center;
+  
+}
+
+#tech-planet{
+  background-color: #000;
+  height: 20vw;
+  width: 20vw;
+  margin-left: 3vh;
+  margin-top: 10vh;
+  border-radius: 100%;
+  color: #fff;
+  justify-items: center;
+  align-content: center;
+  font-weight: 1000;
+  font-size: 30px;
+  line-height: 75px;
+  letter-spacing: 0.2em;
+}
+
+ #projects{
+  display: grid; 
+  grid-area: projects;
+  justify-items: center;
+}
+  
+  #projects-planet{
+  background-color: #000;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 100%;
+  color: #fff;
+  justify-items: center;
+  align-content: center;
+  font-weight: 1000;
+  font-size: 30px;
+  line-height: 75px;
+  letter-spacing: 0.2em;
+}
+
+
+
+
